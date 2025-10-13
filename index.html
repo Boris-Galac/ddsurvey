@@ -1,0 +1,679 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DDSURVEY</title>
+    <meta
+      name="description"
+      content="DD Survey stands for yacht owners — independent, transparent, and expert. Our seasoned seafarers deliver turnkey solutions that preserve value and ensure your yacht’s enduring performance."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
+    <link rel="stylesheet" href="dist/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="/src/js/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="header__logo"
+        ><img
+          src="/src/assets/images/ddsurvey-logo.svg"
+          alt="ddsurvey yacht logo"
+      /></a>
+      <nav class="nav" id="nav" aria-expanded="false">
+        <video
+          src="/src/assets/video-bg.mp4"
+          poster="/src/assets/images/video-poster-img.jpg"
+          autoplay
+          muted
+          loop
+          playsinline
+          class="nav-video-bg"
+          preload="metadata"
+        ></video>
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+          <li class="nav__item"><a href="#ceo" class="nav__link">CEO</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+        <div class="nav__languages-wrapper">
+          <button><img src="/src/assets/icons/eng.svg" alt="english" /></button>
+          <button>
+            <img
+              src="/src/assets/icons/uae.svg"
+              alt="united arabian emirates"
+            />
+          </button>
+          <button><img src="/src/assets/icons/ger.svg" alt="germany" /></button>
+          <button><img src="/src/assets/icons/ita.svg" alt="italia" /></button>
+        </div>
+      </nav>
+      <button
+        class="ham-btn"
+        aria-label="ham button"
+        data-active="false"
+        tabindex="0"
+        aria-controls="nav"
+      >
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+        <div class="ham-line"></div>
+      </button>
+    </header>
+    <main class="main">
+      <!-- 👉 HERO section  -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero__container">
+            <div class="hero__content-wrapper">
+              <h1 class="hero__headline">
+                <span>yacht survey</span>
+                <span>on a safe course</span>
+              </h1>
+              <div class="hero__btn-wrappper">
+                <a href="#ceo" role="button" class="default-btn hero-cta-btn"
+                  ><img
+                    src="/src/assets/icons/hero-person-icon.svg"
+                    alt="person ceo"
+                    class="icon"
+                  />CEO</a
+                >
+                <a
+                  href="#about"
+                  role="button"
+                  class="default-btn hero-get-started-btn"
+                  >Get started
+                  <img
+                    class="icon"
+                    src="/src/assets/icons/hero-arrow-icon.svg"
+                    alt="arrow"
+                /></a>
+              </div>
+            </div>
+            <div class="contact-bar hero--contact-bar">
+              <h3>Contact CEO</h3>
+              <div class="contact-bar__inner-wrapper">
+                <a href="tel:+385911558531"
+                  ><img
+                    src="/src/assets/icons/phone-icon.svg"
+                    class="icon"
+                  />+385911558531</a
+                >
+                <a href="mailto:yachtingsurvey@yahoo.com"
+                  ><img src="/src/assets/icons/gmail-icon.svg" class="icon" />
+                  yachtingsurvey@yahoo.com</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav__languages-wrapper nav-lang--desktop">
+          <button><img src="/src/assets/icons/eng.svg" alt="english" /></button>
+          <button>
+            <img
+              src="/src/assets/icons/uae.svg"
+              alt="united arabian emirates"
+            />
+          </button>
+          <button><img src="/src/assets/icons/ger.svg" alt="germany" /></button>
+          <button><img src="/src/assets/icons/ita.svg" alt="italia" /></button>
+        </div>
+      </section>
+      <!-- 👉 ABOUT US section  -->
+      <section class="about-us-section" id="about">
+        <div class="container">
+          <div class="about-us__container">
+            <h2 class="h2-heading about-us--heading">about us</h2>
+            <div class="about-us__inner__container">
+              <article class="about-us__article circle-clip-animation">
+                <div class="about-us__article__row">
+                  <h3 class="h3-heading about-us-h3--heading">
+                    <img
+                      src="/src/assets/images/about-us__article-heading.svg"
+                      alt="ddsurvey"
+                    />
+                  </h3>
+                  <p class="about-us__paragraph">
+                    Exclusively representing the yacht owner, independent of
+                    brokers, agents, or marketers. We deliver transparent,
+                    turnkey solutions that safeguard value, ensure flawless
+                    performance, and protect your yacht for the long term. Our
+                    team is composed of highly educated seafarers with extensive
+                    nautical miles and professional diplomas, bringing unmatched
+                    expertise and practical insight to every project.
+                  </p>
+                </div>
+                <div class="about-us__article__row">
+                  <img
+                    src="/src/assets/images/about-us-propeller-img.png"
+                    alt="propeller"
+                  />
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 👉 SERVICES section  -->
+      <img
+        src="/src/assets/images/services-top-element.svg"
+        aria-hidden="true"
+        class="services--ornament services--top-ornament"
+      />
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="services__container">
+            <h2 class="h2-heading services--heading">our services</h2>
+            <div class="about-us__inner__container">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item hidden-left">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-01.png"
+                        alt="owner representation"
+                        class="accordion-icon"
+                      />
+                      OWNER REPRESENTATION
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-03.png"
+                        alt="ddsurvey service"
+                        class="icon"
+                      />
+                      <p>
+                        Exclusive one-to-one representation of the yacht owner
+                        at every stage—from negotiations and shipyard dealings
+                        to technical supervision of captains, engineers, and
+                        brand representatives. During construction, every
+                        onboard system is refined to ensure functionality,
+                        visual perfection, and long-term performance, enhancing
+                        the vessel's overall operation. Advanced solutions are
+                        integrated early, eliminating costly modifications and
+                        preserving the yacht's long-term value. After each
+                        assignment, owners receive a detailed written and
+                        digital report, including photographic documentation and
+                        comprehensive technical analysis, ensuring full
+                        transparency and complete clarity at every stage.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-right">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="collapseTwo"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-02.png"
+                        alt="pre-purchase survey"
+                        class="accordion-icon"
+                      />
+                      PRE-PURCHASE SURVEY
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-02.png"
+                        alt="ddsurvey service"
+                        class="icon"
+                      />
+                      <p>
+                        Meticulous technical inspections that deliver complete
+                        clarity before purchase. From structural integrity to
+                        operational performance, every detail is revealed,
+                        allowing you to invest with confidence and avoid
+                        unexpected issues. Surveys are conducted from the
+                        perspective of an experienced seafarer, focusing on
+                        technical reliability, safety, and long-term
+                        performance, while also examining interior details,
+                        functionality, practicality, and the accuracy of
+                        execution. This balanced approach ensures a realistic
+                        and comprehensive evaluation of the yacht. When
+                        necessary, findings are presented with complete
+                        transparency to protect your interests.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-left">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                      aria-expanded="false"
+                      aria-controls="collapseThree"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-03.png"
+                        alt="accordion icon 3"
+                        class="accordion-icon"
+                      />
+                      FLAG/COMMERCIAL CLASS PREPARATION (RINA / MCA / IACS)
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseThree"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-03.png"
+                        alt="ddsurvey service"
+                        class="icon"
+                      />
+                      <p>
+                        The entire process of bringing a yacht into full
+                        compliance with its flag state regulations is handled
+                        with precision and discretion. Registration and all
+                        associated COD requirements are closely monitored, with
+                        every step anticipated and managed in advance to avoid
+                        unnecessary costs or delays. We ensure the vessel is
+                        always equipped with all mandatory documentation,
+                        registers, logbooks, and certificates, keeping the yacht
+                        fully compliant and ready for safe commercial operation
+                        at all times. Every requirement is fulfilled with
+                        efficiency and transparency, guaranteeing flawless
+                        certification and long-term reliability.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-right">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour"
+                      aria-expanded="false"
+                      aria-controls="collapseFour"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-04.png"
+                        alt="accordion icon 4"
+                        class="accordion-icon"
+                      />
+                      REFIT SUPERVISION
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFour"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We manage all types of refits, with particular expertise
+                      in aluminum yacht refits. From shipyard coordination to
+                      final handover, every stage is controlled to ensure the
+                      highest technical and aesthetic standards. Budgets are
+                      prepared with precision, providing owners with complete
+                      financial clarity, while comprehensive reports outline the
+                      vessel's condition and identify potential future
+                      investment opportunities. Each phase is closely monitored,
+                      with transparent updates that give you an accurate
+                      assessment of progress and quality.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-left">
+                  <h2 class="accordion-header" id="headingFive">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseFive"
+                      aria-expanded="false"
+                      aria-controls="collapseFive"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-05.png"
+                        alt="accordion icon 5"
+                        class="accordion-icon"
+                      />
+                      SEASONAL / YEARLY CHECK & CONDITION REPORT
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseFive"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      Comprehensive inspections and detailed reports delivered
+                      ahead of the season, yearly cycle, or charter period. This
+                      service safeguards readiness, performance, and value,
+                      providing owners and managers with complete peace of mind.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-right">
+                  <h2 class="accordion-header" id="headingSix">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSix"
+                      aria-expanded="false"
+                      aria-controls="collapseSix"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-06.png"
+                        alt="accordion icon 6"
+                        class="accordion-icon"
+                      />
+                      HANDOVER & CREW TRAINING
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSix"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      In collaboration with the owner, we review and verify
+                      existing survey reports to ensure accuracy and
+                      completeness. This process involves a detailed audit of
+                      yacht operations, identifying areas for improvement,
+                      mitigating operational risks, and safeguarding the owner's
+                      investme
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-left">
+                  <h2 class="accordion-header" id="headingSeven">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseSeven"
+                      aria-expanded="false"
+                      aria-controls="collapseSeven"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-07.png"
+                        alt="accordion icon 7"
+                        class="accordion-icon"
+                      />
+                      SURVEY VERIFICATION & OPERATIONAL AUDIT
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseSeven"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      In collaboration with the owner, we review and verify
+                      existing survey reports to ensure accuracy and
+                      completeness. This process includes a detailed audit of
+                      yacht operations, identifying areas for improvement,
+                      reducing operational risks, and protecting the owner’s
+                      investment.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item hidden-right">
+                  <h2 class="accordion-header" id="headingEight">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseEight"
+                      aria-expanded="false"
+                      aria-controls="collapseEight"
+                    >
+                      <img
+                        src="/src/assets/icons/accordion-btn-icon-08.png"
+                        alt="accordion icon 8"
+                        class="accordion-icon"
+                      />
+                      SECURITY
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseEight"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      We deliver bespoke security solutions for yachts, owners,
+                      and crew, led by an elite team of Close Protection
+                      Officers holding worldwide licenses.
+                      <ul class="security-list">
+                        <li>
+                          Close protection, escort, and 24/7 armed or unarmed
+                          supervision at sea and in port
+                        </li>
+                        <li>
+                          Continuous 24/7 yacht monitoring and remote tracking
+                          for uncompromising safety
+                        </li>
+                        <li>
+                          Comprehensive crew background checks and screenings
+                        </li>
+                        <li>
+                          Background support for owners, guests, and operations
+                        </li>
+                        <li>Polygraph testing available upon request</li>
+                        <li>
+                          Specialized training in threat recognition and
+                          emergency response
+                        </li>
+                        <li>Security equipment training and implementation</li>
+                        <li>
+                          Advanced electronic and cyber protection: spyware
+                          detection, mobile/cloud security, anti-eavesdropping,
+                          drone defence
+                        </li>
+                        <li>
+                          Discreet transport of valuables and supply of bespoke
+                          tactical equipment
+                        </li>
+                        <li>
+                          Seamless, confidential, and uninterrupted protection
+                          at the highest level.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/src/assets/images/services-logo.svg"
+          class="icon"
+          alt="ddsurvey"
+          class="services-logo"
+        />
+      </section>
+      <img
+        src="/src/assets/images/services-bottom-element.svg"
+        aria-hidden="true"
+        class="services--ornament"
+      />
+      <!-- 👉 CEO section  -->
+      <section class="ceo-section" id="ceo">
+        <div class="ceo__container">
+          <article class="ceo__article">
+            <div class="ceo__article-row">
+              <img
+                src="/src/assets/images/ceo-img.jpg"
+                alt="ceo image"
+                class="circle-clip-animation"
+              />
+            </div>
+            <div class="ceo__article-row">
+              <p class="ceo-paragraph dark-clr hidden-fade">
+                Mrs. Dina Jelaska comes from a long line of seafarers, with
+                generations of captains establishing a tradition of excellence
+                at sea. After graduating from a maritime school, she spent
+                fifteen years in a senior position with the Royal Family (UAE),
+                where she was entrusted with protocol and the hosting of
+                distinguished guests. In that role, she worked closely with
+                heads of state, members of royal families, and VIPs from across
+                the globe, honing the values of precision, discretion, and
+                excellence. <br /><br />
+                Experience with mega yachts, integral to the Royal Family's
+                lifestyle, gave her deep insight into their complexity, rigorous
+                standards, and the bespoke expectations of ownership. Building
+                on this unique experience and supported by a trusted network of
+                accomplished professionals, Dina established a company
+                specializing in yacht and superyacht surveying. Her work
+                combines technical expertise, uncompromising safety standards,
+                and refined interior design, delivered through a bespoke service
+                defined by trust, discretion, and prestige.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- 👉 CEO section  -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact__container">
+            <h2 class="h2-heading contact--heading">contact us</h2>
+            <p class="contact__paragraph hidden-left">
+              If you require expert support with yacht inspections, refit
+              supervision, class preparation, or any other aspect of vessel
+              management, we are here to help. Contact us directly to discuss
+              your needs, and we will provide a tailored service designed to
+              protect your investment and deliver complete peace of mind.
+            </p>
+            <div class="contact__inner-container">
+              <div class="contact-bar hidden-right">
+                <h3>Contact CEO</h3>
+                <div class="contact-bar__inner-wrapper">
+                  <a href="tel:+385911558531"
+                    ><img
+                      src="/src/assets/icons/phone-icon.svg"
+                      class="icon"
+                    />+385911558531</a
+                  >
+                  <a href="mailto:yachtingsurvey@yahoo.com"
+                    ><img src="/src/assets/icons/gmail-icon.svg" class="icon" />
+                    yachtingsurvey@yahoo.com</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <picture class="splash-screen">
+      <source
+        media="(min-width:600px)"
+        srcset="/src/assets/images/splash-img--desktop.jpg"
+      />
+      <img src="/src/assets/images/splash-img--mobile.jpg" aria-hidden="true" />
+    </picture>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__container">
+          <a href="#">
+            <img
+              src="/src/assets/images/footer-logo.svg"
+              alt="logo"
+              class="footer__logo"
+            />
+          </a>
+          <div class="footer__separator"></div>
+          <nav class="footer__nav">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">about us</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">services</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">gallery</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__contact-bar">
+            <a href="tel:+385911558531"
+              ><img
+                src="/src/assets/icons/footer-phone-icon.svg"
+                alt="phone"
+              />+385 91 155 8531</a
+            >
+            <a href="mailto:yachtingsurvey@yahoo.com"
+              ><img
+                src="/src/assets/icons/footer-gmail-icon.svg"
+                alt="phone"
+              />yachtingsurvey@yahoo.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>2025. © DDSURVEY - All right reserved</span>
+      </div>
+    </footer>
+  </body>
+</html>

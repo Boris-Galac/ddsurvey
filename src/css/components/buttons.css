@@ -1,0 +1,72 @@
+button {
+  background-color: transparent;
+  border: 0;
+}
+.default-btn {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  padding-block: 13px;
+  padding-inline: 36px;
+  width: max-content;
+  background-color: var(--dark);
+  color: var(--white);
+  border-radius: 8px;
+  outline: 2px solid var(--white);
+  font-size: 18px;
+}
+.hero-cta-btn {
+  background-color: var(--white);
+  outline-color: var(--gold-clr);
+  color: rgb(118, 108, 52);
+  font-weight: 600;
+  animation: hero-cta-btn 3s forwards 1.6s;
+}
+@keyframes hero-cta-btn {
+  0% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.hero-get-started-btn {
+  font-weight: 600;
+  background-color: var(--gold-clr);
+  animation: hero-get-started-btn 3s forwards 1.6s;
+}
+@keyframes hero-get-started-btn {
+  0% {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.hero-cta-btn,
+.hero-get-started-btn {
+  width: min(100%, 300px) !important;
+  transition: 0.6s;
+}
+.hero-cta-btn:hover,
+.hero-get-started-btn:hover {
+  scale: 1.05;
+}
+@media (min-width: 1024px) {
+  .hero-cta-btn {
+    margin-left: auto !important;
+  }
+  .hero-get-started-btn {
+    margin-right: auto;
+  }
+}

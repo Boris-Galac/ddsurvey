@@ -1,0 +1,8 @@
+:root {
+  --black: #000;
+  --dark: hsl(213, 9%, 19%);
+  --white: #fff;
+  --gold-clr: hsl(37, 49%, 56%);
+  --gray-100: hsl(218, 10%, 47%);
+  --blue-gray: hsl(220deg 31.62% 58.76%);
+}
