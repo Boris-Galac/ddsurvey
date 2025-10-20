@@ -57,6 +57,8 @@ button {
 .hero-get-started-btn {
   width: min(100%, 300px) !important;
   transition: 0.6s;
+  padding-block: 10px;
+  scale: 0.8;
 }
 .hero-cta-btn:hover,
 .hero-get-started-btn:hover {

@@ -51,10 +51,19 @@
   width: 80%;
 }
 .nav-lang--desktop {
-  display: none;
+  display: block;
 }
 .nav__languages-wrapper {
+  display: flex;
+  flex-direction: column;
   animation: hero-lang 3s forwards 1.6s;
+
+  width: max-content;
+  left: 20px !important;
+  top: 70px;
+  height: max-content;
+  gap: 48px;
+  scale: 0.7;
 }
 @keyframes hero-lang {
   0% {
@@ -110,8 +119,8 @@
   position: relative;
   background-color: var(--gray-100);
   border-radius: 16px;
-  display: grid;
-  grid-template-rows: 4fr 3fr;
+  /* display: grid; */
+  /* grid-template-rows: 4fr 3fr; */
   overflow: hidden;
 }
 .about-us__article__row:first-child {
@@ -120,7 +129,7 @@
 }
 .about-us__article__row:last-child {
   position: relative;
-  height: 100%;
+  height: 280px;
 }
 .about-us__article__row:last-child::before {
   content: "";
@@ -132,8 +141,7 @@
 }
 img[alt="propeller"] {
   position: absolute;
-  animation: propeller 15s linear infinite;
-  margin-top: 32px;
+  animation: propeller 35s linear infinite;
 }
 @keyframes propeller {
   to {
@@ -145,18 +153,21 @@ img[alt="propeller"] {
     position: relative;
     background-color: var(--gray-100);
     border-radius: 16px;
-    display: grid;
-    grid-template-columns: 4fr 3fr;
+    display: flex;
     grid-template-rows: unset;
     overflow: hidden;
   }
   img[alt="propeller"] {
     position: static;
-    animation: propeller 15s linear infinite;
-    /* margin-top: 0; */
-    /* margin: auto; */
-    width: 300px;
+    height: 100%;
     place-self: center;
+  }
+  .about-us__article__row:first-child {
+    flex: 3;
+  }
+  .about-us__article__row:last-child {
+    flex: 2;
+    height: 100% !important;
   }
 }
 /* 👉 SERVICES section  */
@@ -274,6 +285,17 @@ img[alt="ceo image"] {
 .contact-section .contact-bar h3 {
   text-align: center;
   font-size: 32px;
+}
+.contact-section .contact-bar__inner-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.contact-section .contact-bar__inner-wrapper a {
+  margin-inline: auto;
+}
+.contact-section .contact-bar__inner-wrapper img {
+  margin-inline: auto;
+  scale: 1.25;
 }
 @media (min-width: 1024px) {
   .contact-bar {

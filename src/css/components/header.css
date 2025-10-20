@@ -160,6 +160,9 @@
   display: flex;
   gap: 6px;
 }
+.contact-bar__inner-wrapper img {
+  width: 32px;
+}
 
 @media (min-width: 1024px) {
   .hero__btn-wrappper {

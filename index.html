@@ -15,8 +15,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="/src/css/style.css" /> -->
-    <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <!-- <link rel="stylesheet" href="dist/style.css" /> -->
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -57,15 +57,18 @@
           </li>
         </ul>
         <div class="nav__languages-wrapper">
-          <button><img src="/src/assets/icons/eng.svg" alt="english" /></button>
-          <button>
-            <img
-              src="/src/assets/icons/uae.svg"
-              alt="united arabian emirates"
-            />
+          <button class="lang-btn" data-lang="eng">
+            <img src="/src/assets/icons/eng.svg" alt="english" />
           </button>
-          <button><img src="/src/assets/icons/ger.svg" alt="germany" /></button>
-          <button><img src="/src/assets/icons/ita.svg" alt="italia" /></button>
+          <button class="lang-btn" data-lang="ita">
+            <img src="/src/assets/icons/ita.svg" alt="italia" />
+          </button>
+          <button class="lang-btn" data-lang="ger">
+            <img src="/src/assets/icons/ger.svg" alt="germany" />
+          </button>
+          <button class="lang-btn" data-lang="uae">
+            <img src="/src/assets/icons/uae.svg" alt="uae" />
+          </button>
         </div>
       </nav>
       <button
@@ -111,39 +114,50 @@
               </div>
             </div>
             <div class="contact-bar hero--contact-bar">
-              <h3>Contact CEO</h3>
+              <h3>CEO</h3>
               <div class="contact-bar__inner-wrapper">
                 <a href="tel:+385911558531"
-                  ><img
-                    src="/src/assets/icons/phone-icon.svg"
-                    class="icon"
-                  />+385911558531</a
-                >
+                  ><img src="/src/assets/icons/phone-icon.svg" class="icon"
+                /></a>
                 <a href="mailto:yachtingsurvey@yahoo.com"
                   ><img src="/src/assets/icons/gmail-icon.svg" class="icon" />
-                  yachtingsurvey@yahoo.com</a
-                >
+                </a>
+                <a
+                  href="https://wa.me/385911558531?text=Hi!%20I%E2%80%99m%20interested%20in%20your%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information%3F
+"
+                  ><img
+                    src="/src/assets/icons/whatsapp-icon.svg"
+                    class="icon"
+                  />
+                </a>
               </div>
             </div>
           </div>
         </div>
         <div class="nav__languages-wrapper nav-lang--desktop">
-          <button><img src="/src/assets/icons/eng.svg" alt="english" /></button>
-          <button>
-            <img
-              src="/src/assets/icons/uae.svg"
-              alt="united arabian emirates"
-            />
+          <button class="lang-btn" data-lang="eng">
+            <img src="/src/assets/icons/eng.svg" alt="english" />
           </button>
-          <button><img src="/src/assets/icons/ger.svg" alt="germany" /></button>
-          <button><img src="/src/assets/icons/ita.svg" alt="italia" /></button>
+          <button class="lang-btn" data-lang="ita">
+            <img src="/src/assets/icons/ita.svg" alt="italia" />
+          </button>
+          <button class="lang-btn" data-lang="ger">
+            <img src="/src/assets/icons/ger.svg" alt="germany" />
+          </button>
+          <button class="lang-btn" data-lang="uae">
+            <img src="/src/assets/icons/uae.svg" alt="uae" />
+          </button>
         </div>
       </section>
       <!-- 👉 ABOUT US section  -->
       <section class="about-us-section" id="about">
         <div class="container">
           <div class="about-us__container">
-            <h2 class="h2-heading about-us--heading">about us</h2>
+            <h2
+              class="h2-heading about-us--heading about-us-ita-heading about-us-ger-heading about-us-uae-heading"
+            >
+              about us
+            </h2>
             <div class="about-us__inner__container">
               <article class="about-us__article circle-clip-animation">
                 <div class="about-us__article__row">
@@ -153,7 +167,9 @@
                       alt="ddsurvey"
                     />
                   </h3>
-                  <p class="about-us__paragraph">
+                  <p
+                    class="about-us__paragraph about-us__paragraph-ita-paragraph about-us__paragraph-ger-paragraph about-us__paragraph-uae-paragraph"
+                  >
                     Exclusively representing the yacht owner, independent of
                     brokers, agents, or marketers. We deliver transparent,
                     turnkey solutions that safeguard value, ensure flawless
@@ -183,7 +199,11 @@
       <section class="services-section" id="services">
         <div class="container">
           <div class="services__container">
-            <h2 class="h2-heading services--heading">our services</h2>
+            <h2
+              class="h2-heading services--heading services-ita-heading services-ger-heading services-uae-heading"
+            >
+              our services
+            </h2>
             <div class="about-us__inner__container">
               <div class="accordion" id="accordionExample">
                 <div class="accordion-item hidden-left">
@@ -201,7 +221,10 @@
                         alt="owner representation"
                         class="accordion-icon"
                       />
-                      OWNER REPRESENTATION
+                      <span
+                        class="one-btn-ita-heading one-btn-eng-heading one-btn-ger-heading one-btn-uae-heading"
+                        >OWNER REPRESENTATION</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -216,7 +239,9 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
+                      <p
+                        class="one-btn-eng-paragraph one-btn-ita-paragraph one-btn-ger-paragraph one-btn-uae-paragraph"
+                      >
                         Exclusive one-to-one representation of the yacht owner
                         at every stage—from negotiations and shipyard dealings
                         to technical supervision of captains, engineers, and
@@ -249,7 +274,10 @@
                         alt="pre-purchase survey"
                         class="accordion-icon"
                       />
-                      PRE-PURCHASE SURVEY
+                      <span
+                        class="two-btn-ita-heading two-btn-eng-heading two-btn-ger-heading two-btn-uae-heading"
+                        >PRE-PURCHASE SURVEY</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -264,7 +292,9 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
+                      <p
+                        class="two-btn-ita-paragraph two-btn-eng-paragraph two-btn-ger-paragraph two-btn-uae-paragraph"
+                      >
                         Meticulous technical inspections that deliver complete
                         clarity before purchase. From structural integrity to
                         operational performance, every detail is revealed,
@@ -297,7 +327,11 @@
                         alt="accordion icon 3"
                         class="accordion-icon"
                       />
-                      FLAG/COMMERCIAL CLASS PREPARATION (RINA / MCA / IACS)
+                      <span
+                        class="three-btn-ita-heading three-btn-eng-heading three-btn-ger-heading three-btn-uae-heading"
+                        >FLAG/COMMERCIAL CLASS PREPARATION (RINA / MCA /
+                        IACS)</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -312,7 +346,9 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
+                      <p
+                        class="three-btn-ita-paragraph three-btn-eng-paragraph three-btn-ger-paragraph three-btn-uae-paragraph"
+                      >
                         The entire process of bringing a yacht into full
                         compliance with its flag state regulations is handled
                         with precision and discretion. Registration and all
@@ -344,7 +380,10 @@
                         alt="accordion icon 4"
                         class="accordion-icon"
                       />
-                      REFIT SUPERVISION
+                      <span
+                        class="four-btn-ita-heading four-btn-eng-heading four-btn-ger-heading four-btn-uae-heading"
+                        >REFIT SUPERVISION</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -359,7 +398,9 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
+                      <p
+                        class="four-btn-ita-paragraph four-btn-eng-paragraph four-btn-ger-paragraph four-btn-uae-paragraph"
+                      >
                         We manage all types of refits, with particular expertise
                         in aluminum yacht refits. From shipyard coordination to
                         final handover, every stage is controlled to ensure the
@@ -389,7 +430,10 @@
                         alt="accordion icon 5"
                         class="accordion-icon"
                       />
-                      SEASONAL / YEARLY CHECK & CONDITION REPORT
+                      <span
+                        class="five-btn-ita-heading five-btn-eng-heading five-btn-ger-heading five-btn-uae-heading"
+                        >SEASONAL / YEARLY CHECK & CONDITION REPORT</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -404,7 +448,9 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
+                      <p
+                        class="five-btn-ita-paragraph five-btn-eng-paragraph five-btn-ger-paragraph five-btn-uae-paragraph"
+                      >
                         Comprehensive inspections and detailed reports delivered
                         ahead of the season, yearly cycle, or charter period.
                         This service safeguards readiness, performance, and
@@ -429,7 +475,10 @@
                         alt="accordion icon 6"
                         class="accordion-icon"
                       />
-                      HANDOVER & CREW TRAINING
+                      <span
+                        class="six-btn-ita-heading six-btn-eng-heading six-btn-ger-heading six-btn-uae-heading"
+                        >HANDOVER & CREW TRAINING</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -444,13 +493,18 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
-                        In collaboration with the owner, we review and verify
-                        existing survey reports to ensure accuracy and
-                        completeness. This process involves a detailed audit of
-                        yacht operations, identifying areas for improvement,
-                        mitigating operational risks, and safeguarding the
-                        owner's investme.
+                      <p
+                        class="six-btn-ita-paragraph six-btn-eng-paragraph six-btn-ger-paragraph six-btn-uae-paragraph"
+                      >
+                        Exclusive 1:1 representation of the yacht owner at every
+                        stage — from negotiations and shipyard dealings to
+                        technical supervision of captains, engineers, and brand
+                        representatives. During construction, every onboard
+                        system is refined to be functional, visually flawless,
+                        and built for long-term performance, enhancing the
+                        vessel’s overall operation. Advanced solutions are
+                        integrated early, eliminating costly modifications and
+                        preserving the yacht’s long-term value.
                       </p>
                     </div>
                   </div>
@@ -470,7 +524,11 @@
                         alt="accordion icon 7"
                         class="accordion-icon"
                       />
-                      SURVEY VERIFICATION & OPERATIONAL AUDIT
+                      <span
+                        class="seven-btn-ita-heading seven-btn-eng-heading seven-btn-ger-heading seven-btn-uae-heading"
+                      >
+                        SURVEY VERIFICATION & OPERATIONAL AUDIT
+                      </span>
                     </button>
                   </h2>
                   <div
@@ -485,7 +543,9 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      <p>
+                      <p
+                        class="seven-btn-ita-paragraph seven-btn-eng-paragraph seven-btn-ger-paragraph seven-btn-uae-paragraph"
+                      >
                         In collaboration with the owner, we review and verify
                         existing survey reports to ensure accuracy and
                         completeness. This process includes a detailed audit of
@@ -511,7 +571,10 @@
                         alt="accordion icon 8"
                         class="accordion-icon"
                       />
-                      SECURITY
+                      <span
+                        class="eight-btn-ita-heading eight-btn-eng-heading eight-btn-ger-heading eight-btn-uae-heading"
+                        >SECURITY</span
+                      >
                     </button>
                   </h2>
                   <div
@@ -526,40 +589,69 @@
                         alt="ddsurvey service"
                         class="icon"
                       />
-                      We deliver bespoke security solutions for yachts, owners,
-                      and crew, led by an elite team of Close Protection
-                      Officers holding worldwide licenses.
+                      <p
+                        class="eight-btn-ita-paragraph eight-btn-eng-paragraph eight-btn-ger-paragraph eight-btn-uae-paragraph"
+                      >
+                        We deliver bespoke security solutions for yachts,
+                        owners, and crew, led by an elite team of Close
+                        Protection Officers holding worldwide licenses.
+                      </p>
+
                       <ul class="security-list">
-                        <li>
+                        <li
+                          class="security-list-ita-li-one security-list-eng-li-one security-list-ger-li-one security-list-uae-li-one"
+                        >
                           Close protection, escort, and 24/7 armed or unarmed
                           supervision at sea and in port
                         </li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-two security-list-eng-li-two security-list-ger-li-two security-list-uae-li-two"
+                        >
                           Continuous 24/7 yacht monitoring and remote tracking
                           for uncompromising safety
                         </li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-three security-list-eng-li-three security-list-ger-li-three security-list-uae-li-three"
+                        >
                           Comprehensive crew background checks and screenings
                         </li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-four security-list-eng-li-four security-list-ger-li-four security-list-uae-li-four"
+                        >
                           Background support for owners, guests, and operations
                         </li>
-                        <li>Polygraph testing available upon request</li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-five security-list-eng-li-five security-list-ger-li-five security-list-uae-li-five"
+                        >
+                          Polygraph testing available upon request
+                        </li>
+                        <li
+                          class="security-list-ita-li-six security-list-eng-li-six security-list-ger-li-six security-list-uae-li-six"
+                        >
                           Specialized training in threat recognition and
                           emergency response
                         </li>
-                        <li>Security equipment training and implementation</li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-seven security-list-eng-li-seven security-list-ger-li-seven security-list-uae-li-seven"
+                        >
+                          Security equipment training and implementation
+                        </li>
+                        <li
+                          class="security-list-ita-li-eight security-list-eng-li-eight security-list-ger-li-eight security-list-uae-li-eight"
+                        >
                           Advanced electronic and cyber protection: spyware
                           detection, mobile/cloud security, anti-eavesdropping,
                           drone defence
                         </li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-nine security-list-eng-li-nine security-list-ger-li-nine security-list-uae-li-nine"
+                        >
                           Discreet transport of valuables and supply of bespoke
                           tactical equipment
                         </li>
-                        <li>
+                        <li
+                          class="security-list-ita-li-ten security-list-eng-li-ten security-list-ger-li-ten security-list-uae-li-ten"
+                        >
                           Seamless, confidential, and uninterrupted protection
                           at the highest level.
                         </li>
@@ -595,7 +687,9 @@
               />
             </div>
             <div class="ceo__article-row">
-              <p class="ceo-paragraph dark-clr hidden-fade">
+              <p
+                class="ceo-paragraph dark-clr hidden-fade ceo-ita-paragraph ceo-eng-paragraph ceo-ger-paragraph ceo-uae-paragraph"
+              >
                 Mrs. Dina Jelaska comes from a long line of seafarers, with
                 generations of captains establishing a tradition of excellence
                 at sea. After graduating from a maritime school, she spent
@@ -623,8 +717,14 @@
       <section class="contact-section" id="contact">
         <div class="container">
           <div class="contact__container">
-            <h2 class="h2-heading contact--heading">contact us</h2>
-            <p class="contact__paragraph hidden-left">
+            <h2
+              class="h2-heading contact--heading contact-ita-heading contact-eng-heading contact-ger-heading contact-uae-heading"
+            >
+              contact us
+            </h2>
+            <p
+              class="contact__paragraph hidden-left contact-ita-paragraph contact-eng-paragraph contact-ger-paragraph contact-uae-paragraph"
+            >
               If you require expert support with yacht inspections, refit
               supervision, class preparation, or any other aspect of vessel
               management, we are here to help. Contact us directly to discuss
@@ -633,18 +733,22 @@
             </p>
             <div class="contact__inner-container">
               <div class="contact-bar hidden-right">
-                <h3>Contact CEO</h3>
+                <h3>CEO</h3>
                 <div class="contact-bar__inner-wrapper">
                   <a href="tel:+385911558531"
-                    ><img
-                      src="/src/assets/icons/phone-icon.svg"
-                      class="icon"
-                    />+385911558531</a
-                  >
+                    ><img src="/src/assets/icons/phone-icon.svg" class="icon"
+                  /></a>
                   <a href="mailto:yachtingsurvey@yahoo.com"
                     ><img src="/src/assets/icons/gmail-icon.svg" class="icon" />
-                    yachtingsurvey@yahoo.com</a
-                  >
+                  </a>
+                  <a
+                    href="https://wa.me/385911558531?text=Hi!%20I%E2%80%99m%20interested%20in%20your%20services.%20Could%20you%20please%20provide%20me%20with%20more%20information%3F
+"
+                    ><img
+                      src="/src/assets/icons/whatsapp-icon.svg"
+                      class="icon"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -652,13 +756,13 @@
         </div>
       </section>
     </main>
-    <picture class="splash-screen">
+    <!-- <picture class="splash-screen">
       <source
         media="(min-width:600px)"
         srcset="/src/assets/images/splash-img--desktop.jpg"
       />
       <img src="/src/assets/images/splash-img--mobile.jpg" aria-hidden="true" />
-    </picture>
+    </picture> -->
     <footer class="footer">
       <div class="container">
         <div class="footer__container">
