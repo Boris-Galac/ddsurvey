@@ -32,6 +32,12 @@
   flex-direction: column;
   gap: 24px;
 }
+.accordion-button span {
+  text-align: center;
+  width: fit-content;
+  margin-inline: auto;
+  font-size: 12px;
+}
 .accordion-body > img {
   width: 70px;
   margin-inline: auto;
@@ -48,4 +54,13 @@
   padding: 6px;
   border-radius: 4px;
   background-color: hsl(219deg 26.99% 53.82%);
+}
+@media (min-width: 1200px) {
+  .accordion-button span {
+    text-align: left;
+    width: fit-content;
+    margin-inline: unset;
+    margin-left: 100px;
+    font-size: 14px;
+  }
 }
