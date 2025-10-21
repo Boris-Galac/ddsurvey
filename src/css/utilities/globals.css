@@ -20,6 +20,8 @@
   0% {
     opacity: 1;
     display: block;
+    visibility: visible;
+    pointer-events: visible;
   }
   70% {
     opacity: 1;
@@ -28,6 +30,8 @@
   100% {
     opacity: 0;
     display: none;
+    visibility: hidden;
+    pointer-events: none;
   }
 }
 .splash-screen img {

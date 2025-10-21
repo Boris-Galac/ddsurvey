@@ -501,3 +501,18 @@ document.addEventListener("DOMContentLoaded", () => {
     setLanguage(savedLang);
   }
 });
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const target = document.querySelector(this.getAttribute("href"));
+    const offset = 130;
+    const topPosition =
+      target.getBoundingClientRect().top + window.scrollY - offset;
+
+    window.scrollTo({
+      top: topPosition,
+      behavior: "smooth",
+    });
+  });
+});

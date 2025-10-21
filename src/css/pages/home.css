@@ -115,12 +115,10 @@
   background-color: var(--white);
 }
 .about-us__article {
-  position: relative;
   background-color: var(--gray-100);
   border-radius: 16px;
-  /* display: grid; */
-  /* grid-template-rows: 4fr 3fr; */
   overflow: hidden;
+  width: 100%;
 }
 .about-us__article__row:first-child {
   padding: 32px;
@@ -210,12 +208,19 @@ img[alt="propeller"] {
   background-color: var(--white);
   overflow: hidden;
   padding-bottom: unset !important;
+  isolation: isolate;
+}
+.ceo-h2-heading {
+  display: grid;
+  margin-bottom: 48px;
+  margin-inline: 16px;
+  place-items: center;
 }
 .ceo__article {
   display: grid;
   grid-template-rows: auto 1fr;
 }
-.ceo__article-row {
+.ceo__article-row:last-child {
   padding: 32px;
 }
 .ceo__article-row:first-child {
@@ -225,7 +230,7 @@ img[alt="propeller"] {
   position: relative;
   isolation: isolate;
 }
-.ceo__article-row:last-child::before {
+.ceo-section::before {
   content: "";
   position: absolute;
   background: url("/src/assets/images/ceo-second-image.png") no-repeat center
@@ -236,9 +241,7 @@ img[alt="propeller"] {
 .ceo-paragraph {
   font-weight: 400;
 }
-img[alt="ceo image"] {
-  border-radius: 16px;
-}
+
 @media (min-width: 1024px) {
   .ceo__article {
     display: grid;
