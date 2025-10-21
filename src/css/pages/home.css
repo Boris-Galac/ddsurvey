@@ -128,7 +128,7 @@
 }
 .about-us__article__row:last-child {
   position: relative;
-  /* height: 280px; */
+  height: 280px;
 }
 .about-us__article__row:last-child::before {
   content: "";
