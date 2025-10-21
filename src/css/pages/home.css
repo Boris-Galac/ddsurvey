@@ -128,7 +128,7 @@
 }
 .about-us__article__row:last-child {
   position: relative;
-  height: 280px;
+  /* height: 280px; */
 }
 .about-us__article__row:last-child::before {
   content: "";
@@ -166,7 +166,7 @@ img[alt="propeller"] {
   }
   .about-us__article__row:last-child {
     flex: 2;
-    height: 100% !important;
+    /* height: 100% !important; */
   }
 }
 /* 👉 SERVICES section  */
@@ -253,7 +253,8 @@ img[alt="ceo image"] {
   }
   .ceo-paragraph {
     font-weight: 400;
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 16px;
   }
 }
 
