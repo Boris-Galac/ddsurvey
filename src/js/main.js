@@ -1,3 +1,12 @@
+window.addEventListener("load", () => {
+  setTimeout(() => {
+    const splash = document.querySelector(".splash-screen");
+    if (splash) {
+      splash.remove(); // potpuno uklanja element iz DOM-a
+    }
+  }, 3000); // 3 sekunde
+});
+
 ///// HAM BTN AND NAV OPEN/CLOSEDS
 
 const hamBtn = document.querySelector(".ham-btn");
