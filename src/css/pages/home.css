@@ -156,7 +156,7 @@ img[alt="propeller"] {
   }
   img[alt="propeller"] {
     position: static;
-    height: 100%;
+    /* height: 100%; */
     place-self: center;
   }
   .about-us__article__row:first-child {
