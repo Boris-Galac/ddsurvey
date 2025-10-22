@@ -212,7 +212,7 @@ img[alt="propeller"] {
 }
 .ceo-h2-heading {
   display: grid;
-  margin-bottom: 48px;
+  margin-bottom: 80px;
   margin-inline: 16px;
   place-items: center;
 }

@@ -64,6 +64,12 @@ button {
 .hero-get-started-btn:hover {
   scale: 1.05;
 }
+.lang-btn {
+  transition: 0.3s;
+}
+.lang-btn:hover {
+  scale: 1.5;
+}
 @media (min-width: 1024px) {
   .hero-cta-btn {
     margin-left: auto !important;
