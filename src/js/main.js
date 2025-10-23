@@ -493,11 +493,11 @@ Die Erfahrung mit Megayachten, die ein integraler Bestandteil des Lebensstils de
     const uaeElements = document.querySelectorAll("[class*='-uae-']");
     uaeElements.forEach((el) => (el.style.textAlign = "right"));
   }
-  if (targetLanguage === "uae") {
-    document.querySelector(".about-us__article").style = `height:319px;`;
-  } else {
-    document.querySelector(".about-us__article").style = `height:unset;`;
-  }
+  // if (targetLanguage === "uae") {
+  //   document.querySelector(".about-us__article").style = `height:319px;`;
+  // } else {
+  //   document.querySelector(".about-us__article").style = `height:unset;`;
+  // }
 };
 
 // Dodaj event listener na gumbe jezika
