@@ -5,7 +5,7 @@
 .hero-section::before {
   content: "";
   inset: 0;
-  background: url("/src/assets/images/ddsurvey-hero-img.jpg") no-repeat 85%
+  background: url("/src/assets/images/ddsurvey-hero-img.jpg") no-repeat 86%
     center / cover;
   z-index: -10;
   position: fixed;
