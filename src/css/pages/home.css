@@ -139,7 +139,6 @@
     center / cover;
 }
 img[alt="propeller"] {
-  /* position: absolute; */
   aspect-ratio: 1;
   width: 300px;
   margin: auto;
@@ -253,7 +252,7 @@ img[alt="propeller"] {
     position: relative;
     isolation: isolate;
     display: flex;
-    align-items: center;
+    align-items: start;
   }
   .ceo-paragraph {
     font-weight: 400;

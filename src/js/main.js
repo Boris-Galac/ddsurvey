@@ -520,7 +520,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     e.preventDefault();
 
     const target = document.querySelector(this.getAttribute("href"));
-    const offset = 130;
+    const offset = 100;
     const topPosition =
       target.getBoundingClientRect().top + window.scrollY - offset;
 
