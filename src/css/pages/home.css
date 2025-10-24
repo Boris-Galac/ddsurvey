@@ -247,6 +247,8 @@ img[alt="propeller"] {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: unset;
+    max-width: 1200px;
+    margin-inline: auto;
   }
   .ceo__article-row:last-child {
     position: relative;
